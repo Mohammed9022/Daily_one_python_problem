@@ -38,3 +38,11 @@ now = datetime.datetime.now()
 print("Current date and time: ", now.strftime("%Y-%m-%d %H:%M:%S"))
 
 
+#### Write a program which accepts the radious of a circle from the user and compute the area.
+
+from math import pi
+
+r = float(input("The radius of the circle is: "))
+print("The area of circle with the radius: " + str(r) + " is: " + str(pi * r**2))
+
+
