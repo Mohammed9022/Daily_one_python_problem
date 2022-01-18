@@ -56,3 +56,10 @@ b = int(b)
 
 avg = (a + b)/2
 print("The average of a and b is", avg)
+
+
+# Write a python program to calculate a square of a number entered by the user.
+
+user = input("Enter the number: ")
+user = int(user)
+print("The square number is ", a**2)
