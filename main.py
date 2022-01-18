@@ -46,3 +46,13 @@ r = float(input("The radius of the circle is: "))
 print("The area of circle with the radius: " + str(r) + " is: " + str(pi * r**2))
 
 
+# Write a python program to find average of two numbers entered by the user.
+
+a = input("Enter a first number: ")
+b = input("Enter a second number: ")
+
+a = int(a)
+b = int(b)
+
+avg = (a + b)/2
+print("The average of a and b is", avg)
