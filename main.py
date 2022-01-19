@@ -63,3 +63,24 @@ print("The average of a and b is", avg)
 user = input("Enter the number: ")
 user = int(user)
 print("The square number is ", a**2)
+
+
+# Write a program to create a template(like a job opportunity template on mail)
+
+from datetime import date
+
+letter = """
+Dear <|NAME|>,
+Greeting from ABC Co. Pvt. Ltd. \nI am happy to tell you about your job selection.
+You are selected.
+Have a nice day ahead!
+Thanks and Regards,
+Sim
+Dated on <|DATE|>
+"""
+
+name = input("Enter Your Name\n")
+dated = str(date.today())
+letter = letter.replace("<|NAME|>", name)
+letter = letter.replace("<|DATE|>", dated)
+print(letter)
