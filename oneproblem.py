@@ -97,3 +97,16 @@ f7 = input("Enter Fruit Number 7: ")
 
 myList = [f1, f2, f3, f4, f5, f6, f7]
 print(myList)
+
+# Write a program to accept the 6 students marks in the sorted manner
+
+m1 = int(input("Enter Marks For Student 1: "))
+m2 = int(input("Enter Marks For Student 2: "))
+m3 = int(input("Enter Marks For Student 3: "))
+m4 = int(input("Enter Marks For Student 4: "))
+m5 = int(input("Enter Marks For Student 5: "))
+m6 = int(input("Enter Marks For Student 6: "))
+
+myMarksList = [m1, m2, m3, m4, m5, m6]
+myMarksList.sort()
+print(myMarksList)
