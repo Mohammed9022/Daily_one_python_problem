@@ -121,3 +121,9 @@ print(list1[0] + list1[1] + list1[2] + list1[3]) # One way is this
 
 list1 = [23, 5, 45, 6]
 print(sum(list1))
+
+# Write a program to count a zeros in the given tuple (a = (3,2,0,1,0,0,5))
+
+a = (3,2,0,1,0,0,5)
+print(a.count(0))
+
