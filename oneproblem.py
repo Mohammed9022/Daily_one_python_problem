@@ -110,3 +110,14 @@ m6 = int(input("Enter Marks For Student 6: "))
 myMarksList = [m1, m2, m3, m4, m5, m6]
 myMarksList.sort()
 print(myMarksList)
+
+# Write a program to sum a list of 4 numbers
+
+
+list1 = [23, 5, 45, 6]
+print(list1[0] + list1[1] + list1[2] + list1[3]) # One way is this
+
+# And the another way is this
+
+list1 = [23, 5, 45, 6]
+print(sum(list1))
