@@ -157,3 +157,36 @@ num8 = int(input("Enter number 8\n"))
 
 s = {num1, num2, num3, num4, num5, num6, num7, num8}
 print(s)
+
+
+# Write a program to have a set with 18(int) and "18"(str) as a  value in it.
+
+s = {18, "18", 18.1, (18, "18")} # Yes this will work because they all are different datatypes and sets are consume unique elements.
+
+print(s)
+
+# Create an empty dictionary and allow 4 friends to enter their favourite language as values and
+# use keys as their names. Assume that teh names are unique
+
+favDict = {}
+
+a = input("Enter your programming language Afsar")
+a = input("Enter your programming language Faisal")
+a = input("Enter your programming language Sonal")
+a = input("Enter your programming language Komal")
+
+favDict["afsar"] = a
+favDict["faisal"] = b
+favDict["sonal"] = c
+favDict["komal"] = d
+
+print(favDict)
+
+
+# Interview quetions (Interviewer will confusing you for asking this question)
+
+# Can you change the values inside a list which is contained in set s.
+
+#s = {8, 7, 12, "Afsar", [1, 2]}
+#print(s) # This will throw an TypeError(unhashable type: 'list') 
+# For this example we cannot change the list items in this set because sets are immutable.
