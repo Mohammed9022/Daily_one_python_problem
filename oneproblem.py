@@ -127,3 +127,18 @@ print(sum(list1))
 a = (3,2,0,1,0,0,5)
 print(a.count(0))
 
+
+# Write a program to Create the Dictionary of english to hindi translation.
+
+myDict = {
+	"Bad" : "Kharab",
+	"Tolerate" : "Sahna",
+	"good" : "accha",
+	"Describe" : "Darshana"
+}
+
+print("The options are", list(myDict.keys()))
+
+a = input("Enter the word\n")
+print("The meaning of your word is: ", myDict.get(a)) # the get function will not return an error 
+# It returns the None value (if the contents are not present in the dictionary)
