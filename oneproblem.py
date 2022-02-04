@@ -287,3 +287,86 @@ if (name in list_of_names):
 else:
 	print("Your name is not present in the list")
 
+
+# Write a program to print multiplication table of a given number using for loops and While loop
+
+print("The Multiplication Table")
+num = int(input("Enter number: "))
+
+
+for i in range(1, 11):
+	print(str(num) + " X " + str(i) + " = " + str(i*num))
+#	print(f"{num}X{i}={i*num}") # We can also prints liks this type
+
+# While loop
+
+print("The Multiplication Table")
+num = int(input("Enter Number: "))
+n = 1
+
+while num <= 10:
+	print(f"{num} X {n} = {n*num}")
+	n = n + 1
+
+
+# Write a program to find wheater a given number is prime or not
+
+num = int(input("Enter Numer: "))
+prime = True
+
+for i in range(2,num):
+	if (num%i) == 0:
+		prime = False
+		break
+
+if prime:
+	print("This number is prime")
+else:
+	print("This number is not prime")
+
+
+# Write a program to find the factorial number
+
+num = int(input("Enter Number: "))
+factorial = 1
+
+for i in range(1, num+1):
+	factorial = factorial * i
+print(f"The factorial of {num} is {factorial}")
+
+
+# Write a program to find the sum of numbers
+
+num = int(input("Enter Number: "))
+sum = 0
+
+for i in range(0, num+1):
+	sum = sum + i
+print(f"The sum of {num} is {sum}")
+
+
+
+# Write a program to find the sum of first n natural number using for loops
+
+i = 1
+sum = 0
+
+num = int(input("Enter number: "))
+while(i<n):
+    sum += i
+    i += 1
+print(f"The sum of {n} natural number is {sum}")
+
+
+# Write a program to print the star pattern 
+
+n = int(input("Enter a number: "))
+
+for i in range(1, n+1): # if we used only the output is came but the actual result will not come
+    for j in range(n-i):
+        print(" ", end="")
+    for j in range(2*i-1):
+        print("*", end="")
+    for j in range(n-i):
+        print(" ", end="")
+    print("\n", end="")
