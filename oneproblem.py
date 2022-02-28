@@ -438,3 +438,13 @@ def cm_converter(inches):
 a = int(input("Enter the inches value: "))
 c = cm_converter(a)
 print(f"The value of {a} Inches to Cm is {str(c)}")
+
+
+# Create a python funcion to print the multiplication table of a given number 
+
+
+def multiply(n):
+    for i in range(1, 11):
+	    print(str(n) + " X " + str(i) + " = " + str(i*n))
+
+multiply(5)
