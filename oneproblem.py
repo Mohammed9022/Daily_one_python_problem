@@ -352,10 +352,10 @@ i = 1
 sum = 0
 
 num = int(input("Enter number: "))
-while(i<n):
+while(i<num):
     sum += i
     i += 1
-print(f"The sum of {n} natural number is {sum}")
+print(f"The sum of {num} natural number is {sum}")
 
 
 # Write a program to print the star pattern 
@@ -370,3 +370,71 @@ for i in range(1, n+1): # if we used only the output is came but the actual resu
     for j in range(n-i):
         print(" ", end="")
     print("\n", end="")
+
+# If we have created the multiplicaion table but we have to print the things in reversed form.
+
+num = int(input("Enter Number: "))
+
+for i in reversed(range(1, 11)):
+	print(f"{num} X {i} = {i*num}")
+
+# Write a program to to find the greatest of three numbers using the functions
+
+num1 = int(input("Enter First Number: "))
+num2 = int(input("Enter Second Number: "))
+num3 = int(input("Enter Third Number: "))
+
+def maximum(num1, num2, num3):
+	if (num1 > num2):
+        if (num1 > num3):
+            return num1
+        else:
+            return num3
+    else:
+        if (num2 > num3):
+            return num2
+        else:
+            return num3
+
+m = maximum(num1, num2, num3)
+print("The value of the maximum is " + str(m))
+
+
+# Write a program to convert the celcius to fehreheit.
+
+def farh(cel):
+	return (cel *(9/5)) + 32
+
+c = 0
+f = farh(c)
+print("Fahreheit Temperature is " + str(f))
+
+
+# How do we prevent the print() function to print a new line at the end.
+# The default value of the print function at the end is \n that means new line at the every print statement.
+print("Hello", end = " ")
+print("How", end = " ")
+print("Are", end = " ")
+print("You ?", end = " ")
+
+
+# Write a program to remove a given word from a string and strip at the same time
+
+def remove_and_strip(string, word):
+	newStr = string.replace(word, "")
+	return newStr.strip()
+
+new_word = "    Afsar is a boy      "
+n = remove_and_strip(new_word, "Afsar")
+print(n)
+
+
+# Create a python function for Inches to centimeter converter
+
+
+def cm_converter(inches):
+    return (inches * 2.54)
+
+a = int(input("Enter the inches value: "))
+c = cm_converter(a)
+print(f"The value of {a} Inches to Cm is {str(c)}")
