@@ -448,3 +448,73 @@ def multiply(n):
 	    print(str(n) + " X " + str(i) + " = " + str(i*n))
 
 multiply(5)
+
+
+# A file contains a list of word that contains["donkey", "mote", "kaddu"] multiple times. And we need to write a program which replace this word with ##### by updating 
+#the same file. And we need this sample.txt file in our directory.
+
+words = ["donkey", "mote", "kaddu"]
+
+with open("sample.txt") as f:
+    content = f.read()
+
+for word in words:
+	content = content.replace(word, "@@#$%^&^#@@")
+
+with open("sample.txt", "w") as f:
+    f.write(content)
+
+
+# If we have a log file of any webapp and we need find out the word "python" in that log file so write a program to find that word.
+
+content = True
+i = 1
+
+with open("sample.txt")as f:
+        while content:
+                content = f.readline()
+                if "python" in content.lower():
+                        print(content)
+                        print(f"yes python is present in line number {i}")
+                i += 1
+
+# Write a program to make a copy of a text file example "thisfile.txt"
+
+with open("thisfile.txt") as f:
+	content = f.read()
+
+with open("copyfile.txt", "w") as f:
+	f.write(content)
+
+
+# Write a progeram to find out wheater a file is identical and matches the content of another file.
+
+file1 = "thisfile.txt"
+file2 = "copyfile.txt"
+
+with open(file1) as f:
+	f1 = f.read()
+
+with open(file2) as f:
+	f2 = f.read()
+
+if f1 == f2:
+	print("Files are identical")
+else:
+	print("Files are not identical")
+
+
+# Write a program to rename a file to "renamed_by_python.txt"
+
+import os
+oldname = "sample2.txt"
+newname = "renamed_by_python.txt"
+
+with open(oldname) as f:
+        content = f.read()
+
+with open(newname, "w") as f:
+        f.write(content)
+
+os.remove(oldname)
+
