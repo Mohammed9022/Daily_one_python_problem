@@ -518,3 +518,26 @@ with open(newname, "w") as f:
 
 os.remove(oldname)
 
+
+# Creating a calculator using conditional statement
+print("Calculator")
+
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number:"))
+
+print("Please select the operation 1 for addition, 2 for subtraction, 3 for multiplication, 4 for division")
+
+a = int(input("Enter your choice: "))
+
+if a == 1:
+    result = num1 + num2 # For Addition
+    print(result)
+if a == 2:
+    result = num1 - num2 # For Subtraction
+    print(result)
+if a == 3:
+    result = num1 * num2 # For Multiplication
+    print(result)
+if a == 4:
+    result = num1 / num2 # For Division
+    print(result)
