@@ -541,3 +541,25 @@ if a == 3:
 if a == 4:
     result = num1 / num2 # For Division
     print(result)
+
+
+
+# Write a program to define the function which counts the vowels and consonants in the given list ?
+
+def count_vowels_consonant(value):
+    vowels = 0
+    consonant = 0
+    for x in range(len(value)):
+    	if value[x] in ["a", "e", "i", "o", "u"]:
+    		vowels += 1
+    	else:
+    		consonant += 1
+    print("The count of vowels are: ", vowels)
+    print("The count of consonant are: ", consonant)
+
+
+# Calling of function
+# First take the value in variable
+
+val = input("Enter the value: ")
+count_vowels_consonant(val)
